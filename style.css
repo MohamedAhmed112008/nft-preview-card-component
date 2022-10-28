@@ -25,6 +25,34 @@
 .main picture
 {
       width: 300px;
+      position: relative;
+}
+
+.main picture:hover .img-overlay
+{
+      opacity: 1;
+}
+
+.main picture .img-overlay
+{
+      position: absolute;
+      background-color: rgba(0, 255, 247, 50%);
+      /*padding: 140px;*/
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      opacity: 0;
+      transition: 0.5s;
+      cursor: pointer;
+}
+
+.main picture .img-overlay i
+{
+      font-size: 40px;
+      color: white;
 }
 
 .main img
@@ -39,10 +67,19 @@
       margin-top: 20px;
 }
 
-.main .info h2
+.main .info a
 {
       font-size: 19px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: 0.5s;
+}
+
+.main .info a:hover
+{
+      color: #00fff7;
 }
 
 .main .info p
@@ -67,7 +104,6 @@
       display: flex;
       align-items: center;
       transition: 0.5s;
-      cursor: pointer;
       font-size: 15px;
       margin-bottom: 20px;
 
@@ -76,6 +112,7 @@
 .main .info .time .icon:nth-child(1) h3
 {
       color:#00fff7;
+      cursor: pointer;
 }
 
 .main .info .time .icon:nth-child(1) i
@@ -88,9 +125,9 @@
       margin-right: 10px;
 }
 
-.main .info .time .icon:nth-child(2):hover
+.main .info .time .icon:nth-child(2)
 {
-      color: #00fff7;
+      color: hsl(215, 51%, 70%);
 }
 
 .main .info .person
@@ -115,6 +152,13 @@
 .main .info .person h4
 {
       margin-left: 20px;
+      transition: 0.5s;
+      cursor: pointer;
+}
+
+.main .info .person h4:hover
+{
+      color: #00fff7;
 }
 
 .main .info .person h4 span
