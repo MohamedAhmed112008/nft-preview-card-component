@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*
+{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+}
+
+.main
+{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #14253d;
+      border-radius: 20px;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.main picture
+{
+      width: 300px;
+}
+
+.main img
+{
+      border-radius: 6px;
+      width: 100%;
+}
+
+.main .info
+{
+      color: white;
+      margin-top: 20px;
+}
+
+.main .info h2
+{
+      font-size: 19px;
+      margin-bottom: 30px;
+}
+
+.main .info p
+{
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.8;
+      color: hsl(215, 51%, 70%);
+}
+
+.main .info .time
+{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      align-items: center;
+      border-bottom: 1px solid #2f415b;
+}
+
+.main .info .time .icon
+{
+      display: flex;
+      align-items: center;
+      transition: 0.5s;
+      cursor: pointer;
+      font-size: 15px;
+      margin-bottom: 20px;
+
+}
+
+.main .info .time .icon:nth-child(1) h3
+{
+      color:#00fff7;
+}
+
+.main .info .time .icon:nth-child(1) i
+{
+      color:#00fff7;
+}
+
+.main .info .time .icon i
+{
+      margin-right: 10px;
+}
+
+.main .info .time .icon:nth-child(2):hover
+{
+      color: #00fff7;
+}
+
+.main .info .person
+{
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+}
+
+.main .info .person picture
+{
+      width: 50px;
+}
+
+.main .info .person img
+{
+      width: 50px;
+      border: 2px solid white;
+      border-radius: 50%;
+}
+
+.main .info .person h4
+{
+      margin-left: 20px;
+}
+
+.main .info .person h4 span
+{
+      color: hsl(215, 51%, 70%);
+}
